@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/imgPodcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/img_economist" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitlePodcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Economists"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescriptionPodcast"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="The Economists uses the tools of economics to shine a light on ..." />
+
+        <TextView
+            android:id="@+id/textEpisodesPodcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43 episodes" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPlayPodcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="#FBFBFB"
+        app:srcCompat="@drawable/ico_play" />
+</LinearLayout>
